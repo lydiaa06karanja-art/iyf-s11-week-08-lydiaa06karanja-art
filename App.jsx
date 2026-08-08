@@ -12,14 +12,23 @@ function App() {
       <div className="main-layout">
         <Sidebar />
         
-        <main>
-          <h2>Welcome to CommunityHub</h2>
-          <Button text="Create New Post" />
-          
-          <PostCard />
-          <PostCard />
-          <PostCard />
-        </main>
+  <main>
+  <h2>Welcome to CommunityHub</h2>
+  
+  {/* Passing Props */}
+  <h3>Exercise 1: Greetings</h3>
+  <Greeting name="Alice" />
+  <Greeting name="Bob" />
+  <Greeting name="Charlie" />
+
+  {/* Button with props */}
+  <Button text="Create New Post" variant="primary" />
+  <Button text="Cancel" variant="secondary" />
+
+  {/* Dynamic PostCards with .map() */}
+  <h3>Exercise 3: Blog Posts</h3>
+  <PostList />
+</main>
       </div>
 
       <Footer />
