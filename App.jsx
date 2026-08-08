@@ -3,7 +3,8 @@ import Footer from './components/Footer';
 import PostCard from './components/PostCard';
 import Sidebar from './components/Sidebar';
 import Button from './components/Button';
-
+import Card from './components/Card';
+import Layout from './components/Layout';
 function Greeting({ name }) {
   return <h2>Hello, {name}!</h2>;
 }
@@ -25,33 +26,30 @@ function PostList() {
 }
 function App() {
   return (
-    <div className="app">
-      <Header />
-      
-      <div className="main-layout">
-        <Sidebar />
-        
-  <main>
-  <h2>Welcome to CommunityHub</h2>
-  
-  {/* Passing Props */}
-  <h3>Exercise 1: Greetings</h3>
-  <Greeting name="Alice" />
-  <Greeting name="Bob" />
-  <Greeting name="Charlie" />
+    <Layout> 
+      <div className="app">
+        <div className="main-layout">
+          <Sidebar />
+          <main>
+            <h2>Welcome to CommunityHub</h2>
+            <Card title="Exercise 1: Greetings">
+              <Greeting name="Alice" />
+              <Greeting name="Bob" />
+              <Greeting name="Charlie" />
+            </Card>
 
-  {/* Button with props */}
-  <Button text="Create New Post" variant="primary" />
-  <Button text="Cancel" variant="secondary" />
-
-  {/* Dynamic PostCards with .map() */}
-  <h3>Exercise 3: Blog Posts</h3>
-  <PostList />
-</main>
+            <Button text="Create New Post" variant="primary" />
+            <Button text="Cancel" variant="secondary" />
+            <Card title="Exercise 3: Blog Posts">
+              <PostList />
+            </Card>
+            
+          </main>
+        </div>
       </div>
-
-      <Footer />
-    </div>
+    </Layout> 
+  );
+}
   );
 }
 
