@@ -40,6 +40,12 @@ function App() {
           <main>
             <h2>Welcome to CommunityHub</h2>
             
+            <h1>Regina Gathoni </h1>
+<p>I'm a student learning React</p>
+<p>I love coding and coffee</p> 
+<p>Today's goal: Finish Week 8</p>
+<p>Today: {new Date().toLocaleDateString()}</p>
+<p>{new Date().getHours() < 12 ? "Good morning" : new Date().getHours() < 18 ? "Good afternoon" : "Good evening"}</p>
             <Card title="Exercise 1: Greetings">
               <Greeting name="Alice" />
               <Greeting name="Bob" />
