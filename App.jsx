@@ -5,6 +5,11 @@ import Sidebar from './components/Sidebar';
 import Button from './components/Button';
 import Card from './components/Card';
 import Layout from './components/Layout';
+import Counter from './Counter';
+import Toggle from './Toggle';
+import UserForm from './Userform';
+import EventExamples from './EventExamples';
+import ContactForm from './ContactForm';
 function Greeting({ name }) {
   return <h2>Hello, {name}!</h2>;
 }
@@ -30,21 +35,32 @@ function App() {
       <div className="app">
         <div className="main-layout">
           <Sidebar />
+          
           <main>
-            <h2>Welcome to CommunityHub</h2>
-            <Card title="Exercise 1: Greetings">
-              <Greeting name="Alice" />
-              <Greeting name="Bob" />
-              <Greeting name="Charlie" />
-            </Card>
+  <h2>Welcome to CommunityHub</h2>
+  
+  <Card title="Exercise 1: Greetings">
+    <Greeting name="Alice" />
+    <Greeting name="Bob" />
+    <Greeting name="Charlie" />
+  </Card>
+  <Card title="Task 16.1: useState Exercises">
+    <Counter />
+    <Toggle />
+    <UserForm />
+  </Card>
 
-            <Button text="Create New Post" variant="primary" />
-            <Button text="Cancel" variant="secondary" />
-            <Card title="Exercise 3: Blog Posts">
-              <PostList />
-            </Card>
-            
-          </main>
+  <Card title="Task 16.2: Handling Events">
+    <EventExamples />
+    <ContactForm />
+  </Card>
+
+  <Button text="Create New Post" variant="primary" />
+  <Button text="Cancel" variant="secondary" />
+  <Card title="Exercise 3: Blog Posts">
+    <PostList />
+  </Card>
+</main>
         </div>
       </div>
     </Layout> 
