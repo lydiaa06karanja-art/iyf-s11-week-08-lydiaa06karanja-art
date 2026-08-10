@@ -1,13 +1,11 @@
-## CommunityHub - Week 8 Update
 
-### Progress So Far
-- [x] Frontend UI Components: PostCard.jsx, ProfilePage.jsx created
-- [x] GitHub Issues created for all 4 MVP features
-- [x] CONTRIBUTORS.md file added
-- [x] MongoDB Atlas cluster planned - `.env.example` file created
-- [ ] Backend API with MongoDB - Scheduled for Week 9
+## Week 8: React State & Events - COMPLETED ✅
 
-### Next Steps
-Week 9: Connect React frontend to MongoDB Atlas. Implement Authentication, Posts, and Comments API.
+- [x] Task 16.1: useState Exercises - Counter, Toggle, UserForm
+- [x] Task 16.2: Handling Events - EventExamples, ContactForm 
+- [x] Task 16.3: State with Arrays & Objects - TodoList
+- [x] Task 16.4: Lifting State Up - Stats, PostList with shared state
 
+## Next Steps
+Week 9: Connect React frontend to MongoDB Atlas
 Contributors: @lydiaa06karanja-art
